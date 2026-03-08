@@ -95,7 +95,7 @@ const Hero = () => {
             GITHUB
           </a>
           <a 
-            href="mailto:shyla@purdue.edu" 
+            href="mailto:yadav78@purdue.edu" 
             className="btn rounded-1 px-4 py-2 fw-bold"
             style={{ 
               backgroundColor: '#CEB888', 
