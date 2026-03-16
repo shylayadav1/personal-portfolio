@@ -2,6 +2,8 @@ import Hero from './components/Hero';
 import About from './components/About'; 
 // import Experience from './components/Experience'; // Uncomment when ready
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Experience from './components/Experience';
+
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <Hero />
 
       <About />
+
+      <Experience />
 
       {/* 2. Future Sections
           As you build out your Amgen and Skima AI details, 
