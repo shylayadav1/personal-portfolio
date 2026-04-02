@@ -1,36 +1,42 @@
-const Navbar = () => {
+const NavBar = () => {
   return (
     <nav
-      className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top border-bottom border-secondary"
-      style={{ zIndex: 9999, backgroundColor: "#212529" }}
+      className="navbar navbar-expand navbar-dark fixed-top"
+      style={{
+        zIndex: 9999,
+        backgroundColor: "rgba(33, 37, 41, 0.8)", // Slightly transparent
+        backdropFilter: "blur(10px)", // This makes it look "smooth"
+        padding: "1.2rem 0", // Adds more vertical space
+      }}
     >
       <div className="container">
-        {/* Brand Logo - Your Initials */}
+        {/* Brand/Logo */}
         <a
-          className="navbar-brand fw-bold"
-          href="#"
+          className="navbar-brand fw-bold fs-4 tracking-tighter"
+          href="#hero"
           style={{ color: "#CEB888" }}
         >
           SY
         </a>
 
         {/* Navigation Links */}
-        <div className="d-flex gap-4">
+        <div className="ms-auto d-flex gap-5">
+          {/* Increased gap from 4 to 5 for better spacing */}
           <a
             href="#about"
-            className="nav-link text-uppercase small tracking-widest text-light"
+            className="nav-link text-uppercase small tracking-widest fw-semibold custom-nav-link"
           >
             About
           </a>
           <a
             href="#experience"
-            className="nav-link text-uppercase small tracking-widest text-light"
+            className="nav-link text-uppercase small tracking-widest fw-semibold custom-nav-link"
           >
             Experience
           </a>
           <a
             href="#skills"
-            className="nav-link text-uppercase small tracking-widest text-light"
+            className="nav-link text-uppercase small tracking-widest fw-semibold custom-nav-link"
           >
             Skills
           </a>
@@ -40,4 +46,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavBar;

@@ -3,7 +3,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Experience from "./components/Experience";
 import Skills from "./components/Skills";
-import Navbar from "./components/NavBar";
+import  NavBar  from "./components/NavBar";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       className="bg-dark text-light overflow-x-hidden position-relative"
       style={{ zIndex: 2 }}
     >
-      <Navbar />
+      <NavBar />
       {/* Navigation Bar */}
       {/* 1. Hero Section */}
       <Hero />

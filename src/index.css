@@ -10,7 +10,6 @@ body {
   overflow-x: hidden; /* Prevents the white space on the right */
 }
 
-/* Optional: Add a subtle vignette so the corners are darker */
 body::after {
   content: "";
   position: fixed;
@@ -25,4 +24,28 @@ body::after {
 
 html {
   scroll-behavior: smooth;
+}
+.custom-nav-link {
+  color: rgba(255, 255, 255, 0.7) !important;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.custom-nav-link:hover {
+  color: #CEB888 !important; /* Changes to Purdue Gold on hover */
+}
+
+/* Optional: Adds a tiny gold underline that grows on hover */
+.custom-nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #CEB888;
+  transition: width 0.3s;
+  margin-top: 2px;
+}
+
+.custom-nav-link:hover::after {
+  width: 100%;
 }
