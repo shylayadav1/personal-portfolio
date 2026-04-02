@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <section className="container py-5 my-5">
+    <section id="about" className="container py-5 my-5">
       <div className="row justify-content-center">
         <div className="col-lg-8">
           {/* Section Header */}
