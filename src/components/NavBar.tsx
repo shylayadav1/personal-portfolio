@@ -40,6 +40,12 @@ const NavBar = () => {
           >
             Skills
           </a>
+          <a
+            href="#contact"
+            className="nav-link text-uppercase small tracking-widest fw-semibold custom-nav-link"
+          >
+            Contact
+          </a>
         </div>
       </div>
     </nav>

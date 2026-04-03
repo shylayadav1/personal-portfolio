@@ -44,7 +44,7 @@ const Hero = () => {
       className="min-vh-100 d-flex align-items-center justify-content-center position-relative pt-5"
     >
       <motion.div
-        className="position-fixed pointer-events-none"
+        className="position-fixed"
         style={{
           left: dx,
           top: dy,
@@ -55,11 +55,13 @@ const Hero = () => {
           borderRadius: "50%",
           transform: "translate(-50%, -50%)",
           zIndex: 0,
+          pointerEvents: "none",
         }}
       />
 
       <motion.div
         className="container text-center position-relative z-1"
+        style={{ zIndex: 1 }}
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -98,7 +100,7 @@ const Hero = () => {
             GITHUB
           </a>
           <a
-            href="mailto:yadav78@purdue.edu"
+            href="#contact"
             className="btn rounded-1 px-4 py-2 fw-bold"
             style={{
               backgroundColor: "#CEB888",

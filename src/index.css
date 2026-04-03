@@ -49,3 +49,13 @@ html {
 .custom-nav-link:hover::after {
   width: 100%;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* This adds a little "padding" so the footer doesn't 
+   hit the very top of the screen when you arrive */
+#contact {
+  scroll-margin-top: 50px;
+}
