@@ -10,7 +10,7 @@ const Footer = () => {
               Contact Me
             </h2>
             <p className="text-secondary small mx-auto" style={{ maxWidth: '420px' }}>
-              Currently seeking 2027 Full-Time AI Engineering or Data Analytics roles in the Bay Area.
+              Currently seeking January 2027 Full-Time AI Engineering or Data Analytics roles. 
             </p>
 
             <div className="d-flex justify-content-center flex-wrap gap-3 mt-4 mb-2">
